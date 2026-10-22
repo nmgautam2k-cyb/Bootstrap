@@ -4,69 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TicketBooking</title>
+    <link rel="icon" href="Favicon_logo.png" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <style>
-      .movie-img {
-        width: 100%;
-        height: 400px;
-      }
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
   </head>
 
-  <body class="bg-info">
-    <nav class="container-fluid py-3 px-5 bg-dark text-white ">
-      <div class="row align-items-center">
+  <body>
+    <!----navbar-->
+    <nav class="container-fluid py-3 px-5 bg-dark text-white sticky-top">
+      <div class="row mt-4">
         <div class="col">
-          <h1 class="display-6">TicketBooking</h1>
+          <h1 class="display-6 col-12">TicketBooking</h1>
         </div>
 
-        <div class="col d-flex justify-content-end">
-          <ul class="list-inline col-12 col-md-5">
-            <li class="list-inline-item">
+        <div class="col d-flex justify-content-end px-5 py-4 me-3">
+          <ul id="nav-list">
+            <li class="list-inline-item pe-4">
               <a href="#" class="text-decoration-none text-white">Home</a>
             </li>
-            <li class="list-inline-item">
-              <a href="#" class="text-decoration-none text-white">Theatre</a>
+            <li class="list-inline-item pe-4">
+              <a href="#theatre" class="text-decoration-none text-white"
+                >Theatre</a
+              >
             </li>
-            <li class="list-inline-item">
-              <a href="#" class="text-decoration-none text-white">movies</a>
+            <li class="list-inline-item pe-4">
+              <a href="#movies" class="text-decoration-none text-white"
+                >Movies</a
+              >
             </li>
-            <li class="list-inline-item">
-              <a href="#" class="text-decoration-none text-white">About us</a>
+            <li class="list-inline-item pe-4">
+              <a href="#contact" class="text-decoration-none text-white"
+                >Contact us</a
+              >
+            </li>
+            <li class="list-inline-item pe-4">
+              <a href="Reg.html" class="text-decoration-none text-white">Account</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-12 col-md-3 col-lg-3">
+    <!----movies-container-->
+    <div class="container mt-5" id="movies">
+      <h1
+        class="text-white bg-dark d-inline d-flex justify-content-center p-4 rounded"
+      >
+        Latest Movies
+      </h1>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3">
+        <div class="col">
           <div class="card">
             <img
               src="Interstellar.jpg"
               class="card-img-top movie-img image-fluid rounded"
               alt="movie1"
             />
-            <div class="card-body">
+            <div class="card-body" class="card">
               <h5 class="card-title">interstellar</h5>
               <p class="card-text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. It has been the industry's standard dummy text since
                 1966
               </p>
-              <a href="#" class="btn btn-danger">Book tickets</a>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-danger">Book tickets</button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-md-3 col-lg-3">
+        <div class="col">
           <div class="card">
             <img
-              src="Interstellar.jpg"
+              src="movie1.jpg"
               class="card-img-top movie-img image-fluid rounded"
               alt="movie 2"
             />
@@ -77,15 +95,17 @@
                 industry. It has been the industry's standard dummy text since
                 1966.
               </p>
-              <a href="#" class="btn btn-danger">Book tickets</a>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-danger">Book tickets</button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-md-3 col-lg-3">
+        <div class="col">
           <div class="card">
             <img
-              src="Interstellar.jpg"
+              src="movie2.jpg"
               class="card-img-top movie-img image-fluid rounded"
               alt="movie3"
             />
@@ -96,14 +116,16 @@
                 industry. It has been the industry's standard dummy text since
                 1966.
               </p>
-              <a href="#" class="btn btn-danger">Book Tickets</a>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-danger">Book tickets</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-3 col-lg-3">
+        <div class="col">
           <div class="card">
             <img
-              src="Interstellar.jpg"
+              src="movie3.jpg"
               class="card-img-top movie-img image-fluid rounded"
               alt="movie4"
             />
@@ -114,15 +136,17 @@
                 industry. It has been the industry's standard dummy text since
                 1966.
               </p>
-              <a href="#" class="btn btn-danger">Book tickets</a>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-danger">Book tickets</button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-md-3 col-lg-3">
+        <div class="col">
           <div class="card">
             <img
-              src="Interstellar.jpg"
+              src="movie4.jpg"
               class="card-img-top movie-img image-fluid rounded"
               alt="movie5"
             />
@@ -133,14 +157,16 @@
                 industry. It has been the industry's standard dummy text since
                 1966.
               </p>
-              <a href="#" class="btn btn-danger">Book tickets</a>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-danger">Book tickets</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-3 col-lg-3">
+        <div class="col">
           <div class="card">
             <img
-              src="Interstellar.jpg"
+              src="interstellar.jpg"
               class="card-img-top movie-img image-fluid rounded"
               alt="movie6"
             />
@@ -151,14 +177,119 @@
                 industry. It has been the industry's standard dummy text since
                 1966.
               </p>
-              <a href="#" class="btn btn-danger">Book tickets</a>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-danger">Book tickets</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <hr />
-    <footer class="container-fluid mt-5 bg-dark text-white p-5">
+    <br />
+
+    <!---theatre-->
+
+    <div class="container mt-5" id="theatre">
+      <h1
+        style="text-align: center; color: white"
+        class="bg-dark text-center p-4 mb-4"
+      >
+        Recommended Theatre
+      </h1>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3 bg-white p-4 rounded pb-5"
+      >
+        <div class="col">
+          <div
+            class="p-3 border rounded bg-primary text-white d-flex justify-content-center"
+          >
+            KG Cinemas
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="p-3 border rounded bg-primary text-white d-flex justify-content-center"
+          >
+            Kailash Prakash
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="p-3 border rounded bg-primary text-white d-flex justify-content-center"
+          >
+            SPR
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="p-3 border rounded bg-primary text-white d-flex justify-content-center"
+          >
+            INOX
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="p-3 border rounded bg-primary text-white d-flex justify-content-center"
+          >
+            ROX
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="p-3 border rounded bg-primary text-white d-flex justify-content-center"
+          >
+            Ascaar
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!---Table-->
+
+    <table
+      class="table table-bordered border-primary table-hover w-75 mx-auto table-responsive-sm table-responsive-md table-responsive-lg text-center text-white bg-dark" id="table"
+    >
+      <thead class="table-primary">
+        <tr>
+          <th>SNo.</th>
+          <th>Movie Name</th>
+          <th colspan="2">Date & Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>Vada Chennai</td>
+          <td>1.5.2024</td>
+          <td>6:00 PM</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Interstellar</td>
+          <td>2.3.2026</td>
+          <td>11:00 PM</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Pudhupettai</td>
+          <td>5.5.2004</td>
+          <td>8:00 PM</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Jailer 2</td>
+          <td>4.9.2026</td>
+          <td>1:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br />
+
+    <!----footer-->
+
+    <footer class="container-fluid mt-5 bg-dark text-white p-5" id="contact">
       <div class="row">
         <div class="col">
           <p>Customer Support</p>
