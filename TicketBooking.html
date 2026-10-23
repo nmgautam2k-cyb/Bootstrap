@@ -16,7 +16,7 @@
     </style>
   </head>
 
-  <body>
+  <>
     <!----navbar-->
     <nav class="container-fluid py-3 px-5 bg-dark text-white sticky-top">
       <div class="row mt-4">
@@ -45,12 +45,15 @@
               >
             </li>
             <li class="list-inline-item pe-4">
-              <a href="Reg.html" class="text-decoration-none text-white">Account</a>
+              <a href="Reg.html" class="text-decoration-none text-white"
+                >Account</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!----movies-container-->
     <div class="container mt-5" id="movies">
       <h1
@@ -58,7 +61,6 @@
       >
         Latest Movies
       </h1>
-
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3">
         <div class="col">
           <div class="card">
@@ -248,7 +250,8 @@
     <!---Table-->
 
     <table
-      class="table table-bordered border-primary table-hover w-75 mx-auto table-responsive-sm table-responsive-md table-responsive-lg text-center text-white bg-dark" id="table"
+      class="table table-bordered border-primary table-hover w-75 mx-auto table-responsive-sm table-responsive-md table-responsive-lg text-center text-white bg-dark"
+      id="table"
     >
       <thead class="table-primary">
         <tr>
@@ -286,6 +289,50 @@
     </table>
 
     <br /><br />
+
+    <!-----Accordion-->
+    <div class="container">
+      <h1 class="text-center text-white mb-3">FAQ</h1>
+      <div class="accordion" id="myaccord">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#one"
+            >
+              Does TicketBooking is charging tax for each ticket
+            </button>
+          </h2>
+
+          <div
+            id="one"
+            class="accordion-collapse collapse show"
+            data-bs-parent="myaccord"
+          >
+            <div class="accordion-body">
+              No, charging for customer who buy more than two tickets
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---toggle-->
+    <div class="text-center mt-4">
+      <button
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        data-bs-target="#details"
+      >
+        Show details
+      </button>
+      <div class="collapse" id="details">
+        <div class="card card-body">
+          Bootstrap makes website design efficient
+        </div>
+      </div>
+    </div>
 
     <!----footer-->
 
